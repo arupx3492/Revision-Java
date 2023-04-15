@@ -3,6 +3,7 @@ package com.example.FirstSpringSecurity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,7 +12,7 @@ public class Controller {
 	public ResponseEntity<String> welcome(){
 		return new ResponseEntity<String>("Welcome to masai app Security", HttpStatus.ACCEPTED);
 	}
-	@GetMapping("/welcomep")
+	@PostMapping("/welcome")
    public ResponseEntity<String> welcomep(){
 
 		return new ResponseEntity<>("Welcome to masai app with security",HttpStatus.ACCEPTED);
